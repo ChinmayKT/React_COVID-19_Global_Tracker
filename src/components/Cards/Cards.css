@@ -1,0 +1,43 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 90px 10px;
+    
+  }
+  .MuiGrid-item {
+      padding: 5px;
+    margin: 2% !important;
+    box-sizing: border-box;
+}
+  
+.MuiGrid-grid-xs-12 {
+    flex-grow: 0;
+    max-width: 100%;
+    flex-basis: 100%;
+}
+ 
+  @media only screen and (max-width: 770px) {
+    .MuiGrid-item {
+      margin: 2% 0 !important;
+    }
+    .MuiGrid-grid-xs-12 {
+        flex-grow: 0;
+        max-width: 80% !important;
+        flex-basis: 100%;
+    }
+  }
+  .infected {
+    background: rgba(255, 238, 0, 0.5)!important;
+    border: 5px solid rgba(255, 238, 0, 0.5);
+  }
+  
+  .recovered{
+    background: rgba(0, 255, 0, 0.5)!important;
+    border: 5px solid rgba(0, 255, 0, 0.5);
+  }
+  
+  .deaths{
+    background: rgba(250, 43, 6, 0.5)!important;
+    border: 5px solid rgba(250, 43, 6, 0.5);
+  }

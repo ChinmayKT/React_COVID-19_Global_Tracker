@@ -1,0 +1,49 @@
+body{
+  /* background-color: rgb(43, 42, 41); */
+  background: url('./blue.jpg');
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.image
+.container{
+  display : flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.con{
+  display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin:  10px;
+}
+
+.image {
+  width: 660px;
+  margin-top: -10px;
+  height: 144px;
+  margin: 0 15px;
+  
+}
+
+@media only screen and (max-width: 770px) {
+  .con{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .container {
+    margin: 22px 10%;
+  }
+
+  .image {
+    width: 72%;
+    height: 84px
+  }
+}
