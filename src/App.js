@@ -9,7 +9,8 @@ export default class App extends Component {
 
   state = {
     data: {},
-    country: '',
+    country : ''
+    
   }
 
   async componentDidMount() {
@@ -19,25 +20,24 @@ export default class App extends Component {
   }
 
   handleCountryChange = async (country) => {
-    const data = await fetchData(country);
-
-    this.setState({ data, country: country });
+    const fectchData = await fetchData(country);
+    this.setState({ data : fectchData , country : country})
   }
 
   render() {
-    const { data, country } = this.state;
+    const { data  , country} = this.state;
 
     
     return (
       <div className="container" >
-  
+      <div className="con">
         
             <img className="image" src={img} alt="COVID-19" />
           
-     
+      </div>
       <Cards data={data} />
-      <CountryPicker  handleCountryChange={this.handleCountryChange}/>
-      <Chart  data={data} country={country}/>
+      <CountryPicker handleCountryChange ={this.handleCountryChange} />
+      <Chart data={data}  country={country}/>
     
     
     </div>
